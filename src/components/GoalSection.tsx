@@ -47,7 +47,7 @@ const GoalSection: React.FC = () => {
   };
 
   return (
-    <section id="goals" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 to-purple-100 snap-start py-20">
+    <section id="goals" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-violet-50 via-slate-50 to-zinc-100 snap-start py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,8 +55,8 @@ const GoalSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">목표</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">목표</h2>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             개발자로서 이루고 싶은 목표와 성장 방향입니다.
           </p>
         </motion.div>
@@ -71,12 +71,12 @@ const GoalSection: React.FC = () => {
             <motion.div
               key={index}
               variants={item}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow"
+              className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-gray-100"
               whileHover={{ y: -5 }}
             >
               <div className="text-4xl mb-4 text-center">{goal.icon}</div>
-              <h3 className="text-2xl font-bold text-center text-gray-800 mb-4">{goal.title}</h3>
-              <p className="text-gray-600 text-center">{goal.description}</p>
+              <h3 className="text-2xl font-bold text-center text-slate-800 mb-4">{goal.title}</h3>
+              <p className="text-slate-600 text-center">{goal.description}</p>
             </motion.div>
           ))}
         </motion.div>

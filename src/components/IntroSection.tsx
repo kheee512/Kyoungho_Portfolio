@@ -14,7 +14,7 @@ const IntroSection: React.FC = () => {
   };
 
   return (
-    <section id="intro" className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100 snap-start relative">
+    <section id="intro" className="min-h-screen flex flex-col bg-gradient-to-br from-slate-100 via-stone-100/80 to-violet-100/60 snap-start relative">
       {/* 왼쪽 상단에 제목과 텍스트 */}
       <div className="container mx-auto px-4 pt-36 md:pt-48">
         <motion.div 
@@ -24,13 +24,13 @@ const IntroSection: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold mb-3 text-gray-800"
+            className="text-4xl md:text-5xl font-bold mb-3 text-slate-800"
             whileHover={{ scale: 1.02 }}
           >
-            안녕하세요, <span className="text-indigo-600">엄경호</span>입니다.
+            안녕하세요, <span className="text-violet-600">엄경호</span>입니다.
           </motion.h2>
           <motion.div 
-            className="text-xl md:text-2xl text-gray-600 space-y-2.5"
+            className="text-xl md:text-2xl text-slate-600 space-y-2.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -59,7 +59,7 @@ const IntroSection: React.FC = () => {
           >
             <motion.a
               href="#projects"
-              className="text-xl md:text-2xl font-medium text-indigo-600 hover:text-indigo-800 transition-colors px-2 py-1"
+              className="text-xl md:text-2xl font-medium text-violet-600 hover:text-violet-800 transition-colors px-2 py-1"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToSection('projects')}

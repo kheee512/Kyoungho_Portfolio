@@ -92,7 +92,7 @@ const ProjectsSection: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center bg-white snap-start py-20 pt-28">
+    <section id="projects" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-zinc-100 snap-start py-20 pt-28">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -100,8 +100,8 @@ const ProjectsSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">프로젝트</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">프로젝트</h2>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             제가 진행했던 주요 프로젝트들입니다.
           </p>
         </motion.div>
@@ -109,7 +109,7 @@ const ProjectsSection: React.FC = () => {
         <div className="relative w-full max-w-4xl mx-auto">
           {/* 좌측 화살표 - 이미지 영역 밖에 위치 (더 바깥쪽으로 이동) */}
           <motion.button
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-24 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 focus:outline-none"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-24 z-10 bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-gray-100 focus:outline-none"
             onClick={() => paginate(-1)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -121,7 +121,7 @@ const ProjectsSection: React.FC = () => {
           </motion.button>
 
           {/* 캐러셀 컨테이너 - 고정 높이 추가 */}
-          <div className="overflow-hidden rounded-2xl bg-gray-50 shadow-lg relative" style={{ height: '450px' }}>
+          <div className="overflow-hidden rounded-2xl bg-gray-50/90 shadow-lg relative border border-gray-100" style={{ height: '450px' }}>
             <AnimatePresence initial={false} custom={direction} mode="popLayout">
               <motion.div
                 key={currentIndex}
@@ -153,7 +153,7 @@ const ProjectsSection: React.FC = () => {
                         href={projects[currentIndex].githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors flex items-center justify-center shadow-lg"
+                        className="p-3 bg-slate-800 text-white rounded-full hover:bg-slate-700 transition-colors flex items-center justify-center shadow-lg"
                         aria-label="GitHub 저장소 방문하기"
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
@@ -164,13 +164,13 @@ const ProjectsSection: React.FC = () => {
                   )}
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{projects[currentIndex].title}</h3>
-                  <p className="text-gray-600 mb-4">{projects[currentIndex].description}</p>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">{projects[currentIndex].title}</h3>
+                  <p className="text-slate-600 mb-4">{projects[currentIndex].description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {projects[currentIndex].technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm"
+                        className="px-3 py-1 bg-violet-100 text-violet-800 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -183,7 +183,7 @@ const ProjectsSection: React.FC = () => {
 
           {/* 우측 화살표 - 이미지 영역 밖에 위치 (더 바깥쪽으로 이동) */}
           <motion.button
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-24 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 focus:outline-none"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-24 z-10 bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-lg hover:bg-gray-100 focus:outline-none"
             onClick={() => paginate(1)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -200,7 +200,7 @@ const ProjectsSection: React.FC = () => {
               <button
                 key={index}
                 onClick={() => goToProject(index)}
-                className={`w-3 h-3 rounded-full focus:outline-none ${index === currentIndex ? 'bg-indigo-600' : 'bg-gray-300'}`}
+                className={`w-3 h-3 rounded-full focus:outline-none ${index === currentIndex ? 'bg-violet-600' : 'bg-gray-300'}`}
                 aria-label={`프로젝트 ${index + 1}로 이동`}
               />
             ))}

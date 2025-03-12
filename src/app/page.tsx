@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import IntroSection from '../components/IntroSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
@@ -34,7 +33,6 @@ export default function Home() {
         <ProjectsSection />
         <GoalSection />
       </main>
-      <Footer />
     </div>
   );
 }

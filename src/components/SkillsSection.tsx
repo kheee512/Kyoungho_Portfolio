@@ -90,7 +90,7 @@ const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="min-h-screen flex items-center justify-center bg-gray-50 snap-start py-20">
+    <section id="skills" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-stone-50 to-zinc-100 snap-start py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -98,8 +98,8 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">기술 스택</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">기술 스택</h2>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             다양한 프로젝트를 통해 습득한 기술들입니다.
           </p>
         </motion.div>
@@ -119,7 +119,7 @@ const SkillsSection: React.FC = () => {
               <motion.div
                 key={index}
                 variants={item}
-                className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100"
                 whileHover={{ y: -5 }}
               >
                 <div className="flex flex-col items-center">
@@ -127,16 +127,16 @@ const SkillsSection: React.FC = () => {
                     {IconComponent && React.createElement(IconComponent as any, { size: 40, color: iconColor })}
                   </div>
                   <div className="flex items-center justify-center mb-4 gap-3">
-                    <h3 className="text-2xl font-bold text-gray-800">{skill.name}</h3>
+                    <h3 className="text-2xl font-bold text-slate-800">{skill.name}</h3>
                     <span className={`px-3 py-1 rounded-full text-white text-sm ${
-                      skill.level === '상' ? 'bg-green-500' :
-                      skill.level === '중' ? 'bg-blue-500' : 'bg-yellow-500'
+                      skill.level === '상' ? 'bg-violet-500' :
+                      skill.level === '중' ? 'bg-teal-500' : 'bg-amber-500'
                     }`}>
                       {skill.level}
                     </span>
                   </div>
                 </div>
-                <p className="text-gray-600 text-center">{skill.description}</p>
+                <p className="text-slate-600 text-center">{skill.description}</p>
               </motion.div>
             );
           })}

@@ -12,30 +12,31 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: '프로젝트 1',
+    title: 'TIP.ZIP',
     description: '첫 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    imageUrl: '/images/project1.jpg',
+    imageUrl: '/tipzip.jpg',
     githubUrl: 'https://github.com'
   },
   {
-    title: '프로젝트 2',
+    title: 'Feelow',
     description: '두 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
     technologies: ['Next.js', 'TypeScript', 'Styled-Components'],
-    imageUrl: '/images/project2.jpg',
+    imageUrl: '/feelow.png',
     githubUrl: 'https://github.com'
   },
   {
-    title: '프로젝트 3',
+    title: 'Hongik Univ. Exhibition Interaction Service',
     description: '세 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
     technologies: ['React', 'JavaScript', 'CSS'],
-    imageUrl: '/images/project3.jpg'
+    imageUrl: '/hongikid.png',
+    githubUrl: 'https://github.com'
   },
   {
-    title: '프로젝트 4',
+    title: 'LocalIt',
     description: '네 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    imageUrl: '/images/project4.jpg'
+    imageUrl: '/next.svg'
   }
 ];
 
@@ -83,16 +84,13 @@ const ProjectsSection: React.FC = () => {
               className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative group"
             >
               <div className="relative h-64 w-full">
-                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                  <p className="text-gray-500">이미지 준비 중</p>
-                </div>
-                {/* 실제 이미지가 있을 때 사용할 코드 */}
-                {/* <Image
+                {/* 실제 이미지 표시 */}
+                <Image
                   src={project.imageUrl}
                   alt={project.title}
                   fill
                   style={{ objectFit: 'cover' }}
-                /> */}
+                />
                 
                 {/* 깃허브 버튼 - 우측 상단에 위치하며 호버 시 나타남 */}
                 {project.githubUrl && (

@@ -28,10 +28,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 .snap-y {
   scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .snap-start {

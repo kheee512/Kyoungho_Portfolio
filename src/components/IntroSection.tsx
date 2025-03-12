@@ -2,6 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const IntroSection: React.FC = () => {
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section id="intro" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 snap-start">
       <div className="container mx-auto px-4 py-16">
@@ -37,6 +48,7 @@ const IntroSection: React.FC = () => {
               className="px-8 py-3 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-700 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={scrollToSection('projects')}
             >
               프로젝트 보기
             </motion.a>

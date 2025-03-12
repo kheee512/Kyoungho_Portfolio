@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           className="text-2xl font-bold text-gray-800"
           whileHover={{ scale: 1.05 }}
         >
-          포트폴리오
+          Kyoungho's Portfolio
         </motion.div>
         <nav>
           <ul className="flex space-x-6">

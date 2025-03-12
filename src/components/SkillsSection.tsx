@@ -30,12 +30,12 @@ const skills: Skill[] = [
   },
   {
     name: 'Tailwind CSS',
-    level: '중',
+    level: '하',
     description: '유틸리티 클래스를 활용한 빠른 UI 개발이 가능합니다.'
   },
   {
     name: 'Next.js',
-    level: '중',
+    level: '하',
     description: 'SSR과 정적 사이트 생성을 활용한 웹 개발을 합니다.'
   }
 ];

@@ -46,20 +46,12 @@ const IntroSection: React.FC = () => {
           >
             <motion.a
               href="#projects"
-              className="px-8 py-3 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-700 transition-colors"
+              className="px-10 py-4 text-lg font-medium bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-700 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToSection('projects')}
             >
               프로젝트 보기
-            </motion.a>
-            <motion.a
-              href="#contact"
-              className="px-8 py-3 bg-white text-indigo-600 border border-indigo-600 rounded-lg shadow-lg hover:bg-indigo-50 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              연락하기
             </motion.a>
           </motion.div>
         </motion.div>

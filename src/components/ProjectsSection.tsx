@@ -36,7 +36,7 @@ const projects: Project[] = [
     title: 'LocalIt',
     description: '네 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
     technologies: ['illustrator', 'Figma', 'React Native'],
-    imageUrl: '/next.svg'
+    imageUrl: '/images/localit.png'
   }
 ];
 

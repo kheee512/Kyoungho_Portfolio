@@ -34,8 +34,9 @@ const IntroSection: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
+            홍익대학교에서 컴퓨터공학과를 전공 중인 4학년 엄경호입니다.
+            <br />
             프론트엔드 개발에 열정을 가진 웹 개발자입니다.
-            사용자 경험을 향상시키는 인터랙티브한 웹 애플리케이션을 만드는 것을 좋아합니다.
           </motion.p>
           <motion.div
             className="flex flex-wrap justify-center gap-4"

@@ -14,28 +14,28 @@ const projects: Project[] = [
   {
     title: 'TIP.ZIP',
     description: '첫 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    imageUrl: '/tipzip.jpg',
+    technologies: ['React', 'TypeScript', 'Styled-Components', 'Framer-motion', 'Git'],
+    imageUrl: '/images/tipzip.jpg',
     githubUrl: 'https://github.com'
   },
   {
     title: 'Feelow',
     description: '두 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
-    technologies: ['Next.js', 'TypeScript', 'Styled-Components'],
-    imageUrl: '/feelow.png',
+    technologies: ['React', 'JavaScript', 'Emotion', 'Framer-motion'],
+    imageUrl: '/images/feelow.png',
     githubUrl: 'https://github.com'
   },
   {
     title: 'Hongik Univ. Exhibition Interaction Service',
     description: '세 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    imageUrl: '/hongikid.png',
+    technologies: ['React', 'JavaScript', 'Styled-Components', 'OpenAI API'],
+    imageUrl: '/images/hongikid.png',
     githubUrl: 'https://github.com'
   },
   {
     title: 'LocalIt',
     description: '네 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['illustrator', 'Figma', 'React Native'],
     imageUrl: '/next.svg'
   }
 ];

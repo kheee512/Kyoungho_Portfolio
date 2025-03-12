@@ -15,7 +15,7 @@ const IntroSection: React.FC = () => {
             className="text-5xl md:text-6xl font-bold mb-6 text-gray-800"
             whileHover={{ scale: 1.05 }}
           >
-            안녕하세요, 개발자 홍길동입니다
+            안녕하세요, <span className="text-indigo-600">엄경호</span>입니다.
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl text-gray-600 mb-8"

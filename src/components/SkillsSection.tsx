@@ -11,32 +11,32 @@ const skills: Skill[] = [
   {
     name: 'React',
     level: '상',
-    description: 'React를 통해 다양한 앱 구현 가능하였습니다.'
+    description: 'React를 학습 후 다양한 앱 구현에 적용하였습니다.'
   },
   {
     name: 'TypeScript',
     level: '중',
-    description: '타입 안정성을 갖춘 코드를 작성할 수 있습니다.'
+    description: '코드 안정성을 갖춘 서비스를 구현하도록 노력하였습니다.'
   },
   {
     name: 'JavaScript',
     level: '상',
-    description: '웹 개발의 기본이 되는 언어를 능숙하게 다룹니다.'
+    description: '웹 개발의 기본인 언어를 심도 있게 학습하였습니다.'
   },
   {
     name: 'Styled-Components',
     level: '중',
-    description: 'CSS-in-JS 방식으로 스타일링을 구현합니다.'
+    description: 'CSS-in-JS 방식으로 스타일링을 구현하였습니다.'
   },
   {
     name: 'Tailwind CSS',
     level: '하',
-    description: '유틸리티 클래스를 활용한 빠른 UI 개발이 가능합니다.'
+    description: '유틸리티 클래스를 활용한 빠른 UI 개발에 대해 학습 중입니다.'
   },
   {
     name: 'Next.js',
     level: '하',
-    description: 'SSR과 정적 사이트 생성을 활용한 웹 개발을 합니다.'
+    description: 'SSR과 정적 사이트 생성을 활용한 웹 개발에 대해 학습 중입니다.'
   }
 ];
 

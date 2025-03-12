@@ -14,14 +14,14 @@ const goals: Goal[] = [
     icon: '🚀'
   },
   {
-    title: '오픈 소스 기여',
-    description: '다양한 오픈 소스 프로젝트에 기여하여 개발 커뮤니티에 도움이 되는 개발자가 되고 싶습니다.',
-    icon: '🌐'
+    title: '소통하는 팀원',
+    description: '팀원들과 소통하여 프로젝트를 함께 진행하고, 서로 도움을 주고 받으며 성장하고자 합니다.',
+    icon: '👥'
   },
   {
-    title: '사용자 중심 개발',
-    description: '사용자 경험을 최우선으로 생각하는 개발자가 되어, 많은 사람들에게 도움이 되는 서비스를 만들고 싶습니다.',
-    icon: '👥'
+    title: '몰입감 있는 사용자 경험',
+    description: '사용자의 몰입감을 최대화하는 서비스를 만드는 프론트엔드 개발자가 되고자 합니다.',
+    icon: '🌐'
   },
   {
     title: '지속적인 학습',
@@ -57,7 +57,7 @@ const GoalSection: React.FC = () => {
         >
           <h2 className="text-4xl font-bold text-gray-800 mb-4">목표</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            앞으로 이루고 싶은 목표와 성장 방향입니다.
+            개발자로서 이루고 싶은 목표와 성장 방향입니다.
           </p>
         </motion.div>
 

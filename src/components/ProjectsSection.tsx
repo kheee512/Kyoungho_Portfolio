@@ -13,28 +13,28 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'TIP.ZIP',
-    description: '첫 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
+    description: '일상 속 꿀팁 공유 플랫폼',
     technologies: ['React', 'TypeScript', 'Styled-Components', 'Vite', 'React Quill', 'Framer-Motion', 'ESLint', 'Prettier'],
-    imageUrl: '/images/tipzip.jpg',
+    imageUrl: '/images/tipzip2.jpg',
     githubUrl: 'https://github.com/TIP-ZIP/TIPZIP_FE'
   },
   {
     title: 'Feelow',
-    description: '두 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
+    description: '현대인들의 감정 관리를 위한 감정 타이머 서비스',
     technologies: ['React', 'JavaScript', 'Emotion', 'Framer-Motion', 'React Calendar'],
     imageUrl: '/images/feelow.png',
     githubUrl: 'https://github.com/Likelion-Feelow/Feelow-Client'
   },
   {
     title: 'Hongik Univ. Exhibition Interaction Service',
-    description: '세 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
+    description: '2024년 홍익대학교 산업디자인학과 졸업 전시 부스에 게시된 전시 관람객을 위한 인터랙션 서비스',
     technologies: ['React', 'JavaScript', 'React Router DOM', 'Styled-Components', 'OpenAI API'],
     imageUrl: '/images/hongikid.png',
     githubUrl: 'https://github.com/kheee512/2024-Hongik-ID-Exhibition'
   },
   {
     title: 'LocalIt',
-    description: '네 번째 프로젝트에 대한 설명입니다. 이 프로젝트는 어떤 문제를 해결하기 위해 만들어졌으며, 어떤 기능을 제공합니다.',
+    description: '지역 거주민과 여행객 매칭 서비스',
     technologies: ['illustrator', 'Figma', 'React Native'],
     imageUrl: '/images/localit.png'
   }
@@ -102,7 +102,7 @@ const ProjectsSection: React.FC = () => {
         >
           <h2 className="text-4xl font-bold text-gray-800 mb-4">프로젝트</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            제가 진행한 주요 프로젝트들입니다. 각 프로젝트는 다양한 기술과 문제 해결 능력을 보여줍니다.
+            제가 진행했던 주요 프로젝트들입니다.
           </p>
         </motion.div>
 

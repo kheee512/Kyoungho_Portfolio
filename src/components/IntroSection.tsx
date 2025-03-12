@@ -14,39 +14,52 @@ const IntroSection: React.FC = () => {
   };
 
   return (
-    <section id="intro" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 snap-start">
-      <div className="container mx-auto px-4 py-16">
+    <section id="intro" className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100 snap-start relative">
+      {/* 왼쪽 상단에 제목과 텍스트 */}
+      <div className="container mx-auto px-4 pt-36 md:pt-48">
         <motion.div 
-          className="max-w-3xl mx-auto text-center"
+          className="text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold mb-3 text-gray-800"
+            whileHover={{ scale: 1.02 }}
+          >
+            안녕하세요, <span className="text-indigo-600">엄경호</span>입니다.
+          </motion.h2>
+          <motion.div 
+            className="text-xl md:text-2xl text-gray-600 space-y-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
+            <p>Kyoungho Eom, Hongik Univ.</p>
+            <p>Computer Engineering Major, Senior</p>
+            <p>Web Frontend Developer</p>
+            <p>Seoul, Mapo-gu</p>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* 화면 중앙 하단에 버튼만 남기기 */}
+      <div className="container mx-auto px-4 flex-grow flex items-center justify-center">
+        <motion.div 
+          className="text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1 
-            className="text-5xl md:text-6xl font-bold mb-6 text-gray-800"
-            whileHover={{ scale: 1.05 }}
-          >
-            안녕하세요, <span className="text-indigo-600">엄경호</span>입니다.
-          </motion.h1>
-          <motion.p 
-            className="text-xl md:text-2xl text-gray-600 mb-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            홍익대학교에서 컴퓨터공학과를 전공 중인 4학년 엄경호입니다.
-            <br />
-            프론트엔드 개발에 열정을 가진 웹 개발자입니다.
-          </motion.p>
           <motion.div
-            className="flex flex-wrap justify-center gap-4"
+            className="flex justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <motion.a
               href="#projects"
-              className="px-10 py-4 text-lg font-medium bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-700 transition-colors"
+              className="text-xl md:text-2xl font-medium text-indigo-600 hover:text-indigo-800 transition-colors px-2 py-1"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToSection('projects')}

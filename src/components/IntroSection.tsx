@@ -30,7 +30,7 @@ const IntroSection: React.FC = () => {
             안녕하세요, <span className="text-indigo-600">엄경호</span>입니다.
           </motion.h2>
           <motion.div 
-            className="text-xl md:text-2xl text-gray-600 space-y-2"
+            className="text-xl md:text-2xl text-gray-600 space-y-2.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}

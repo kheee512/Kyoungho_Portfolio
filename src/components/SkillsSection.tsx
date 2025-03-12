@@ -1,5 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+// 아이콘 라이브러리 import
+import { 
+  FaReact, 
+  FaJs 
+} from 'react-icons/fa';
+import { 
+  SiTypescript, 
+  SiStyledcomponents, 
+  SiTailwindcss, 
+  SiNextdotjs 
+} from 'react-icons/si';
+import { IconType } from 'react-icons';
 
 interface Skill {
   name: string;
@@ -7,6 +19,7 @@ interface Skill {
   description: string;
 }
 
+// 스킬 정보
 const skills: Skill[] = [
   {
     name: 'React',
@@ -39,6 +52,26 @@ const skills: Skill[] = [
     description: 'SSR과 정적 사이트 생성을 활용한 웹 개발에 대해 학습 중입니다.'
   }
 ];
+
+// 스킬별 아이콘 매핑
+const skillIconMap: Record<string, IconType> = {
+  'React': FaReact,
+  'TypeScript': SiTypescript,
+  'JavaScript': FaJs,
+  'Styled-Components': SiStyledcomponents,
+  'Tailwind CSS': SiTailwindcss,
+  'Next.js': SiNextdotjs
+};
+
+// 스킬별 아이콘 색상 매핑
+const skillColorMap: Record<string, string> = {
+  'React': '#61DAFB',
+  'TypeScript': '#3178C6',
+  'JavaScript': '#F7DF1E',
+  'Styled-Components': '#DB7093',
+  'Tailwind CSS': '#06B6D4',
+  'Next.js': '#000000'
+};
 
 const SkillsSection: React.FC = () => {
   const container = {
@@ -77,25 +110,36 @@ const SkillsSection: React.FC = () => {
           animate="show"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
-              whileHover={{ y: -5 }}
-            >
-              <h3 className="text-2xl font-bold text-center text-gray-800 mb-4">{skill.name}</h3>
-              <div className="flex justify-center mb-4">
-                <span className={`px-4 py-1 rounded-full text-white ${
-                  skill.level === '상' ? 'bg-green-500' :
-                  skill.level === '중' ? 'bg-blue-500' : 'bg-yellow-500'
-                }`}>
-                  {skill.level}
-                </span>
-              </div>
-              <p className="text-gray-600 text-center">{skill.description}</p>
-            </motion.div>
-          ))}
+          {skills.map((skill, index) => {
+            // 각 스킬에 맞는 아이콘 컴포넌트를 가져옵니다
+            const IconComponent = skillIconMap[skill.name];
+            const iconColor = skillColorMap[skill.name];
+            
+            return (
+              <motion.div
+                key={index}
+                variants={item}
+                className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                whileHover={{ y: -5 }}
+              >
+                <div className="flex flex-col items-center">
+                  <div className="mb-4">
+                    {IconComponent && React.createElement(IconComponent as any, { size: 40, color: iconColor })}
+                  </div>
+                  <div className="flex items-center justify-center mb-4 gap-3">
+                    <h3 className="text-2xl font-bold text-gray-800">{skill.name}</h3>
+                    <span className={`px-3 py-1 rounded-full text-white text-sm ${
+                      skill.level === '상' ? 'bg-green-500' :
+                      skill.level === '중' ? 'bg-blue-500' : 'bg-yellow-500'
+                    }`}>
+                      {skill.level}
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-center">{skill.description}</p>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>

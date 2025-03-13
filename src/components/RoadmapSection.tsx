@@ -126,7 +126,7 @@ const RoadmapSection: React.FC = () => {
                   <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
                     <div className="flex items-center mb-3">
                       <div className={`p-3 rounded-full bg-gradient-to-r ${statusColors[roadmapItem.status]} text-white mr-4`}>
-                        {Icon && React.createElement(Icon as any, { size: 24 })}
+                        {Icon && React.createElement(Icon as React.ElementType, { size: 24 })}
                       </div>
                       <div>
                         <span className={`inline-block px-3 py-1 rounded-full text-white text-sm bg-gradient-to-r ${statusColors[roadmapItem.status]} mb-1`}>

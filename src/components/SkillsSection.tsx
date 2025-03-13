@@ -124,7 +124,7 @@ const SkillsSection: React.FC = () => {
               >
                 <div className="flex flex-col items-center">
                   <div className="mb-4">
-                    {IconComponent && React.createElement(IconComponent as any, { size: 40, color: iconColor })}
+                    {IconComponent && React.createElement(IconComponent as React.ElementType, { size: 40, color: iconColor })}
                   </div>
                   <div className="flex items-center justify-center mb-4 gap-3">
                     <h3 className="text-2xl font-bold text-slate-800">{skill.name}</h3>

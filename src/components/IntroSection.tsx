@@ -30,15 +30,15 @@ const IntroSection: React.FC = () => {
             안녕하세요, <span className="text-violet-600">엄경호</span>입니다.
           </motion.h2>
           <motion.div 
-            className="text-xl md:text-2xl text-slate-600 space-y-2.5"
+            className="text-xl md:text-2xl text-slate-600 space-y-3 translate-y-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <p>Kyoungho Eom, Hongik Univ.</p>
-            <p>Computer Engineering Major, Senior</p>
-            <p>Web Frontend Developer</p>
-            <p>Seoul, Mapo-gu</p>
+            <p>Kyoungho Eom, <span className="text-violet-600">Hongik Univ.</span></p>
+            <p><span className="text-violet-600">Computer Engineering Major</span>, Senior</p>
+            <p>Web <span className="text-violet-600">Frontend Developer</span></p>
+            <p>Based in <span className="text-violet-600">Seoul</span>, Mapo-gu</p>
           </motion.div>
         </motion.div>
       </div>

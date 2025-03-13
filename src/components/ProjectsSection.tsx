@@ -21,13 +21,13 @@ const projects: Project[] = [
   {
     title: 'Feelow',
     description: '현대인들의 감정 관리를 위한 감정 타이머 서비스',
-    technologies: ['React', 'JavaScript', 'Emotion', 'Framer-Motion', 'React Calendar'],
+    technologies: ['React', 'JavaScript', 'Emotion', 'Framer-Motion', 'React Calendar', 'OpenAI API'],
     imageUrl: '/images/feelow.png',
     githubUrl: 'https://github.com/Likelion-Feelow/Feelow-Client'
   },
   {
     title: 'Hongik Univ. Exhibition Interaction Service',
-    description: '2024년 홍익대학교 산업디자인학과 졸업 전시 부스에 게시된 전시 관람객을 위한 인터랙션 서비스',
+    description: '2024년 홍익대학교 산업디자인학과 졸업 전시 부스 인터랙션 서비스',
     technologies: ['React', 'JavaScript', 'React Router DOM', 'Styled-Components', 'OpenAI API'],
     imageUrl: '/images/hongikid.png',
     githubUrl: 'https://github.com/kheee512/2024-Hongik-ID-Exhibition'

@@ -129,8 +129,8 @@ const SkillsSection: React.FC = () => {
                   <div className="flex items-center justify-center mb-4 gap-3">
                     <h3 className="text-2xl font-bold text-slate-800">{skill.name}</h3>
                     <span className={`px-3 py-1 rounded-full text-white text-sm ${
-                      skill.level === '상' ? 'bg-violet-500' :
-                      skill.level === '중' ? 'bg-teal-500' : 'bg-amber-500'
+                      skill.level === '상' ? 'bg-gradient-to-r from-violet-500 to-purple-600' :
+                      skill.level === '중' ? 'bg-gradient-to-r from-teal-500 to-cyan-600' : 'bg-gradient-to-r from-amber-500 to-orange-600'
                     }`}>
                       {skill.level}
                     </span>

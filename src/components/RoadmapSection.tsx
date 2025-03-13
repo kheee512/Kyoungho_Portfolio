@@ -13,30 +13,30 @@ interface RoadmapItem {
 
 const roadmapItems: RoadmapItem[] = [
   {
-    year: '2023',
-    title: '웹 프론트엔드 기술 심화',
-    description: 'React, TypeScript 심화 학습 및 프로젝트 적용',
+    year: '2024',
+    title: '연합 개발 동아리 활동',
+    description: 'React, JavaScript, TypeScript 학습 및 프로젝트 적용',
     icon: 'education',
     status: 'past'
   },
   {
-    year: '2024',
-    title: '풀스택 개발자로 성장',
-    description: 'Node.js, Express, MongoDB 등 백엔드 기술 학습',
+    year: '2025 상반기',
+    title: '프론트엔드 분야 심화 학습',
+    description: 'Redux, Recoil, Tailwind CSS 등 다양한 라이브러리와 상태 관리 학습',
     icon: 'project',
     status: 'present'
   },
   {
-    year: '2025',
-    title: '프론트엔드 개발자 취업',
-    description: '웹 프론트엔드 개발자로 취업하여 실무 경험 쌓기',
+    year: '2025 하반기',
+    title: '백엔드, 디자인 분야 등, 프론트엔드 연관 분야 학습',
+    description: '다양한 분야의 기술을 학습하여 더 완벽한 프론트엔드 개발자로 성장',
     icon: 'career',
     status: 'future'
   },
   {
     year: '2026',
-    title: '기술 블로그 운영',
-    description: '개발 경험을 공유하는 기술 블로그 운영 및 오픈소스 기여',
+    title: '프론트엔드 개발자로 취업',
+    description: '웹 프론트엔드 개발자로 취업하여 실무 경험 쌓기',
     icon: 'achievement',
     status: 'future'
   }

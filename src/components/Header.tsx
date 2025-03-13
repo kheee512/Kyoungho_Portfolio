@@ -15,14 +15,14 @@ const Header: React.FC = () => {
 
   return (
     <motion.header 
-      className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-violet-500/30 to-violet-300/30 backdrop-blur-sm shadow-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <motion.div 
-          className="text-2xl font-bold text-slate-800"
+          className="text-2xl font-bold text-slate-100"
           whileHover={{ scale: 1.05 }}
         >
           Eom Kyoungho

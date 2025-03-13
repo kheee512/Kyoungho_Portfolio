@@ -6,6 +6,7 @@ import IntroSection from '../components/IntroSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import GoalSection from '../components/GoalSection';
+import RoadmapSection from '../components/RoadmapSection';
 
 export default function Home() {
   // 페이지 로드 시 해시가 있으면 부드럽게 스크롤
@@ -32,6 +33,7 @@ export default function Home() {
         <SkillsSection />
         <ProjectsSection />
         <GoalSection />
+        <RoadmapSection />
       </main>
     </div>
   );

@@ -41,6 +41,9 @@ const Header: React.FC = () => {
             <motion.li whileHover={{ scale: 1.1 }}>
               <a href="#goals" className="text-slate-700 hover:text-violet-700" onClick={scrollToSection('goals')}>목표</a>
             </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }}>
+              <a href="#roadmap" className="text-slate-700 hover:text-violet-700" onClick={scrollToSection('roadmap')}>로드맵</a>
+            </motion.li>
           </ul>
         </nav>
       </div>
